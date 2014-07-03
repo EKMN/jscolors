@@ -1,0 +1,74 @@
+*{
+	transition: 0.3s all linear; /* 1s */
+}
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	position: relative;
+}
+
+.row {
+	padding: 0;
+  margin: 0;
+  list-style: none;
+	display: flex;	
+	flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.col {
+	padding: 2.25% 0;
+	width: 5%;
+	opacity: 0.5;
+}
+.col:hover {
+	opacity: 1;
+}
+
+.startcreating,
+.settings,
+.cubes-spawned {
+	background-color: rgba(0,0,0,.75);
+	padding: 15px;
+	color: white;
+	cursor: pointer;
+}
+
+.startcreating {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+
+.settings {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+.settings .tweak-text {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.settings ul {
+	display: none;
+	list-style-type: none;
+}
+.settings li {
+		float: left;
+		clear: both;
+		cursor: default;
+}
+
+.cubes-spawned {
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+	pointer-events: none;
+}
