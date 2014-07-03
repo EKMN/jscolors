@@ -1,74 +1,77 @@
-*{
-	transition: 0.3s all linear; /* 1s */
+* {
+transition:.3s all linear;
+box-sizing: box-model;
 }
 
 body {
-	font-family: Arial;
-	font-size: 12px;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: white;
-	position: relative;
+font-family:Arial;
+font-size:12px;
+width:100%;
+height:100%;
+background-color:#FFF;
+position:relative;
+margin:0;
+padding:0;
 }
 
 .row {
-	padding: 0;
-  margin: 0;
-  list-style: none;
-	display: flex;	
-	flex-flow: row wrap;
-  justify-content: flex-start;
-}
-.col {
-	padding: 2.25% 0;
-	width: 5%;
-	opacity: 0.5;
-}
-.col:hover {
-	opacity: 1;
+list-style:none;
+display:flex;
+flex-flow:row wrap;
+justify-content:flex-start;
+margin:0;
+padding:0;
 }
 
-.startcreating,
-.settings,
-.cubes-spawned {
-	background-color: rgba(0,0,0,.75);
-	padding: 15px;
-	color: white;
-	cursor: pointer;
+.col {
+width:5%;
+height: 0 !important;
+opacity:0.5;
+padding:2.25% 0;
+}
+
+.col:hover {
+opacity:1;
+}
+
+.startcreating,.settings,.cubes-spawned {
+background-color:rgba(0,0,0,.75);
+color:#FFF;
+cursor:pointer;
+padding:15px;
 }
 
 .startcreating {
-	position: fixed;
-	top: 15px;
-	right: 15px;
+position:fixed;
+top:15px;
+right:15px;
 }
 
 .settings {
-	position: fixed;
-	bottom: 15px;
-	right: 15px;
+position:fixed;
+bottom:15px;
+right:15px;
 }
 
 .settings .tweak-text {
-	font-weight: bolder;
-	text-decoration: underline;
+font-weight:bolder;
+text-decoration:underline;
 }
 
 .settings ul {
-	display: none;
-	list-style-type: none;
+display:none;
+list-style-type:none;
 }
+
 .settings li {
-		float: left;
-		clear: both;
-		cursor: default;
+float:left;
+clear:both;
+cursor:default;
 }
 
 .cubes-spawned {
-	position: fixed;
-	bottom: 15px;
-	left: 15px;
-	pointer-events: none;
+position:fixed;
+bottom:15px;
+left:15px;
+pointer-events:none;
 }
